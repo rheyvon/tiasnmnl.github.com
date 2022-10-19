@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Passion+One:wght@400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,300&f[]=chillax@300,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      
+        <ul class="navigation">
+            <li><a href="" class="HOME">HOME</a></li>
+            <li><a href="#product-ben" class="PRODUCT">PRODUCT</a></li>
+            <li><a href="" class="ABOUT">ABOUT US</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="main-vid" id="Video">
+            <video width="100%" height="50%" autoplay muted loop>
+                <source src="images/BUSINESS VIDEO.mov">
+            </video>
+        </div>
+        <div class="text-vid">
+            <h1>TIAS n' Mnl</h1>
+            <p>With EZ, you travel with ease.</p>
+            <a href="#feature"><button class="shop-vid">SHOP NOW</button></a>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="feature" >
+            <img src="images/shop1.jpg" alt="" class="shadow cursor" width="430px" height="600px">
+        </div>
+        <div class="feature-desc">
+            <div class="Feature-title" id="feature">
+                <h3>IN EZ YOU BREATHE IN SERENITY</h3>
+                <h1>ANYTIME, ANYWHERE</h1>
+                <p>
+                    The physical features of TIAS n’ MNL’s product are that the face mask diffuser the company offers
+                    has a great
+                    quality. It is durable compared to other face masks present in the market. The mint scent is made
+                    with natural
+                    extracts, fine fragrances and 100% pure essential oils. What compliments TIAS n’ MNL’s essential oil
+                    and face mask
+                    diffuser is that the essential oil contains N1 MICRO-GUARD (an anti-bac agent) which effectively
+                    kills diseases
+                    causing germs & improves air hygiene. Meaning, our customer is double-protected by our product
+                    against COVID-19
+                    pandemic & other diseases.
+                    <h5><i>For Only</i> <B>₱99</B></h5>
+                </p>
+            </div>
+            <div class="feature-inclusions">
+                <img src="images/feature1.jpg" alt="" height="150px" width="150px" class="feature shadow">
+                <img src="images/feature2.jpg" alt="" height="150px" width="150px"class="feature shadow">
+                <img src="images/feature3.jpg" alt="" height="150px" width="150px"class="feature shadow">
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-ben" id="product-ben">
+            <h2> PRODUCT BENEFITS
+            </h2>
+            <p>TIAS n’ MNL took advantage of using a face mask and mask diffuser as an instrument to promote safe and
+                comfortable
+                travel. As the Philippines slowly revives the tourism industry, it is better to double up the protection
+                every
+                traveler needs. TIAS n’ MNL scented face mask diffuser serves two (2) purposes, the first purpose is
+                that the aroma
+                TIAS n’ MNL provides temporarily relieves headaches and relaxes the body. Travelers can profit from
+                using our
+                products because they are made to assist travelers in feeling calm while roaming around the city or the
+                world.
+                Secondly, it has antibacterial agents that improve air hygiene.</p>
+        </div>
+        <div class="product-pic">
+            <div class="mySlides">
+                <img src="/images/product.jpg" width="475px" height="400px" class="shadow">
+            </div>
+            <div class="mySlides">
+                <img src="/images/product1.jpg" width="475px" height="400px" class="shadow">
+            </div>
+            <div class="mySlides">
+                <img src="/images/product2.jpg" width="475px" height="400px" class="shadow">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+</body>
+
+</html>
