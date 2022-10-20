@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,11 +14,11 @@
 
 <body>
     <header>
-      
+        <img src="images/BUSINESS LOGO.jpg" width="120px" height="50px">
         <ul class="navigation">
             <li><a href="" class="HOME">HOME</a></li>
             <li><a href="#product-ben" class="PRODUCT">PRODUCT</a></li>
-            <li><a href="" class="ABOUT">ABOUT US</a></li>
+            <li><a href="#guide" class="HOW">HOW TO</a></li>
         </ul>
     </header>
     <div class="main">
@@ -30,19 +29,19 @@
         </div>
         <div class="text-vid">
             <h1>TIAS n' Mnl</h1>
-            <p>With EZ, you travel with ease.</p>
+            <p class="desc">With EZ, you travel with ease.</p>
             <a href="#feature"><button class="shop-vid">SHOP NOW</button></a>
         </div>
     </div>
     <div class="shop">
-        <div class="feature" >
+        <div class="feature">
             <img src="images/shop1.jpg" alt="" class="shadow cursor" width="430px" height="600px">
         </div>
         <div class="feature-desc">
             <div class="Feature-title" id="feature">
                 <h3>IN EZ YOU BREATHE IN SERENITY</h3>
                 <h1>ANYTIME, ANYWHERE</h1>
-                <p>
+                <p class="desc">
                     The physical features of TIAS n’ MNL’s product are that the face mask diffuser the company offers
                     has a great
                     quality. It is durable compared to other face masks present in the market. The mint scent is made
@@ -54,13 +53,13 @@
                     causing germs & improves air hygiene. Meaning, our customer is double-protected by our product
                     against COVID-19
                     pandemic & other diseases.
-                    <h5><i>For Only</i> <B>₱99</B></h5>
+                <h5><i>For Only</i> <B>₱99</B></h5>
                 </p>
             </div>
             <div class="feature-inclusions">
                 <img src="images/feature1.jpg" alt="" height="150px" width="150px" class="feature shadow">
-                <img src="images/feature2.jpg" alt="" height="150px" width="150px"class="feature shadow">
-                <img src="images/feature3.jpg" alt="" height="150px" width="150px"class="feature shadow">
+                <img src="images/feature2.jpg" alt="" height="150px" width="150px" class="feature shadow">
+                <img src="images/feature3.jpg" alt="" height="150px" width="150px" class="feature shadow">
             </div>
         </div>
     </div>
@@ -68,7 +67,8 @@
         <div class="product-ben" id="product-ben">
             <h2> PRODUCT BENEFITS
             </h2>
-            <p>TIAS n’ MNL took advantage of using a face mask and mask diffuser as an instrument to promote safe and
+            <p class="desc">TIAS n’ MNL took advantage of using a face mask and mask diffuser as an instrument to
+                promote safe and
                 comfortable
                 travel. As the Philippines slowly revives the tourism industry, it is better to double up the protection
                 every
@@ -82,37 +82,73 @@
         </div>
         <div class="product-pic">
             <div class="mySlides">
-                <img src="/images/prod.jpg" width="475px" height="400px" class="shadow">
+                <img src="images/prod.jpg" width="475px" height="400px" class="shadow">
             </div>
             <div class="mySlides">
-                <img src="/images/prod1.jpg" width="475px" height="400px" class="shadow">
+                <img src="images/prod1.jpg" width="475px" height="400px" class="shadow">
             </div>
             <div class="mySlides">
-                <img src="/images/prod2.jpg" width="475px" height="400px" class="shadow">
+                <img src="images/prod2.jpg" width="475px" height="400px" class="shadow">
             </div>
+        </div>
+    </div>
+    <div class="guide" id=guide>
+        <h1> HOW TO USE TIAS N’ MNL’S EZ SCENTED FACE MASK DIFFUSER </h1>
+        <p class="desc">TIAS n’ MNL’s product may be attached and detached easily to any kind of face mask. To
+            effectively use this, attach
+            the scented face mask diffuser or the aromatherapy lockets to your mask. </p>
+    </div>
+    <div class="boxes">
+        <div class="guide-box">
+            <h2>GUIDE ON HOW TO ATTACHED / USE OUR SCENTED FACE MASK DIFFUSER</h2>
+            <p class="desc">
+                <br>
+                STEP 1. Use TIAS n’ MNL’s essential oil.
+                <br>
+                <br>
+                STEP 2. Open the lid of the locket , then add 3-5 drops of essential oil on the felt pad, and close back
+                the lid.
+                <br>
+                <br>
+                STEP 3. then lastly, pin it in TIAS n’ MNL face mask.
+            </p>
+        </div>
+
+        <div class="guide2-box">
+            <h2>GUIDE ON HOW TO CLEAN OUR SCENTED FACE MASK DIFFUSER</h2>
+            <p class="desc">
+                <br>
+                STEP 1. Remove the felt pad and wipe it gently with alcohol.
+                <br>
+                <br>
+                STEP 2. Rinse the mat with cold water.
+                <br>
+                <br>
+                STEP 3. Air dry it before using again.
+            </p>
         </div>
     </div>
     <script>
         let slideIndex = 0;
         showSlides();
-        
+
         function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-        </script>
-        
+    </script>
+
 </body>
 
 </html>
