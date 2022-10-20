@@ -7,62 +7,16 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #272727;
+  background-color: #FFFFFF;
   z-index: 3000;
   font-family: 'Clash Display', sans-serif;
   font-size: 22px;
-  height: 35px;
+  height: 50px;
   /* color: black; */
 }
 .main{
   width: 100%;
 }
-/* .btn {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s ease-in-out;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  background: #000000;
-  color: #f5f5f5;
-  cursor: pointer;
-}
-
-.btn:hover {
-  box-shadow: 0 0 20px 0px #0000003a;
-}
-
-.btn .icon {
-  position: absolute;
-  height: 40px;
-  width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-}
-
-.btn .text {
-  transform: translateX(55px);
-}
-
-.btn:hover .icon {
-  width: 175px;
-}
-
-.btn:hover .text {
-  transition: all 0.5s;
-  opacity: 0;
-}
-
-.btn:focus {
-  outline: none;
-} */
 
 .btn:active .icon {
   transform: scale(0.85);
@@ -152,7 +106,7 @@ body {
 .navigation li a {
   text-align: center;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 15px 15px;
   font-weight: 700;
   font-size: 12px;
@@ -233,7 +187,54 @@ img.hover-shadow {
 
 .mySlides {display: none;}
 
-
+.guide h1{
+  font-size: 20px;
+  font-family: 'Clash Display', sans-serif;
+}
+.guide{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.guide p{
+  font-family: 'Chillax', sans-serif;
+}
+.guide-box{
+  background-color: rgb(255, 228, 231);
+  margin: 40px;
+  width: 550px;
+  height: 270px;
+  border-radius: 10px;
+}
+.guide-box h2{
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: 'Clash Display', sans-serif;
+}
+.guide-box p{
+  font-family: 'Chillax', sans-serif;
+  margin-left: 20px;
+}
+.boxes{
+  display: flex;
+}
+.guide2-box{
+  background-color: rgb(255, 228, 231);
+  margin: 40px;
+  width: 550px;
+  height: 270px;
+  border-radius: 10px;
+}
+.guide2-box h2{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Clash Display', sans-serif;
+  
+}
+.guide2-box p{
+  font-family: 'Chillax', sans-serif;
+  margin-left: 20px;
+}
 
 
 
@@ -294,4 +295,42 @@ img.hover-shadow {
   font-size: 16px;
   top: 350px;
 }
+.shop{
+  flex-wrap:  wrap ;
+  flex-direction: column;
+  align-items: center;
 }
+.feature-desc{
+  display: flex;
+  flex-wrap:  wrap ;
+  flex-direction: column;
+  align-items: center;
+}
+.product{
+  display: flex;
+  flex-wrap:  wrap ;
+  flex-direction: column;
+  align-items: center;
+}
+.product-ben{
+  display: flex;
+  flex-wrap:  wrap ;
+  flex-direction: column;
+}
+.desc{
+  font-size: 20px;
+}
+.boxes{
+  display: flex;
+  flex-wrap:  wrap ;
+  flex-direction: column;
+  align-items: center;
+}
+.guide-box{
+  width: 80%;
+}
+.guide2-box{
+  width: 80%;
+}
+}
+
